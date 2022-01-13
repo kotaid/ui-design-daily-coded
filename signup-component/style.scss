@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 13px;
+  }
+}
+body {
+  font-family: "Mulish", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #f4f7ff, #ffeded);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .box-artistic {
+    width: 30rem;
+    height: 20rem;
+    background: rgba(152, 44, 50, 0.03);
+    border-radius: 0.6rem;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+
+.form-container {
+  width: 23rem;
+  background: #ffff;
+  padding: 3rem;
+  font-size: 0.7rem;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.channel-user-count,
+.invitation-statement,
+#login-redirect-link {
+  font-size: 0.6rem;
+}
+
+.invitaion-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  & > * {
+    margin-bottom: 0.3rem;
+  }
+  .invitation-avatar-img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    outline: 1rem solid #f8f4fa;
+    margin-bottom: 2rem;
+
+    img {
+      width: 150%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  .channel-name {
+    font-size: 0.9rem;
+  }
+
+  .channel-user-count {
+    padding: 0.5rem;
+    background: #f8f4fa;
+    border-radius: 0.3rem;
+  }
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem 0;
+
+  & > * {
+    width: 100%;
+  }
+}
+
+.input-gr {
+  margin: 1rem 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.link {
+  color: #a30062;
+  font-size: 0.8rem;
+}
+
+label:first-of-type {
+  padding-left: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+input,
+button {
+  border: none;
+  background: none;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+input {
+  border: 1px solid #c2adc2;
+}
+
+button {
+  color: #fff;
+  background: #a30062;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
