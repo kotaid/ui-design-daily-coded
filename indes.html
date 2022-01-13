@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Signup form</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="box-artistic"></div>
+
+      <div class="form-container">
+        <div class="invitaion-info">
+          <div class="invitation-avatar-img">
+            <img src="avatar.jpeg" alt="avatar picture" />
+          </div>
+          <div class="invitation-statement">Tina V. invited you to join</div>
+          <div class="channel-name">
+            <h2>Channel name</h2>
+          </div>
+          <div class="channel-user-count">
+            46K Active users・78K Total users
+          </div>
+        </div>
+        <form action="">
+          <label for="userName">Username</label>
+          <input
+            type="text"
+            name="userName"
+            id="userName"
+            placeholder="How would you like pepple to call you?"
+          />
+          <div class="input-gr">
+            <input type="checkbox" name="termsAgree" id="termsAgree" />
+            <label for="termsAgree"
+              >I have read and agree to the
+              <a href="#" class="link">Terms of service</a> and
+              <a href="#" class="link">Privacy policy</a>.</label
+            >
+          </div>
+          <button type="submit">Continue</button>
+        </form>
+        <a href="#" class="link" id="login-redirect-link"
+          >Already have an account</a
+        >
+      </div>
+    </main>
+  </body>
+</html>
