@@ -1,4 +1,4 @@
-# UI Design Daily **Coded**
+# UI Design Daily <span style="color:#C47DEF">Coded</span>.
 
 This is a serie for practicing simple UI coding, I will try to add one component or sometimes pages everyday.
 
