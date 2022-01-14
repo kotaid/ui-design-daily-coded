@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 13px;
+  }
+}
+body {
+  font-family: "Mulish", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+input,
+button {
+  border: none;
+  background: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #161c27;
+}
+
+.search-component {
+  width: 40rem;
+  padding: 3rem;
+  background: #111620;
+  font-size: 1rem;
+  color: #7a90bb;
+  font-weight: lighter;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 0 0.6em #242c3d;
+  //   border: 1rem solid #242c3d;
+
+  & > * {
+    margin-bottom: 1rem;
+  }
+
+  .tilte {
+    color: #9ab7ef;
+    font-family: "Merriweather", serif;
+  }
+
+  .form-gr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    input {
+      width: 100%;
+      padding: 0.7rem;
+      border: 1px solid #273245;
+      border-radius: 0.2rem;
+      font-size: 1.2rem;
+    }
+
+    label {
+      position: absolute;
+      top: 0.7rem;
+      left: 0.7rem;
+
+      svg {
+        margin-right: 0.3rem;
+      }
+      span {
+        vertical-align: super;
+      }
+    }
+  }
+
+  .filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+
+    span {
+      padding: 0.5rem 0.7rem;
+      border-radius: 1.3rem;
+      background: #142037;
+      border: 1px solid transparent;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        background: #111620;
+        border: 1px solid #242c3d;
+      }
+    }
+  }
+}
